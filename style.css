@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+   }
+
+div{
+    width: 24vw;
+    height: 70vh;
+    padding: 20px;
+    color: white
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+img{
+    width: 40%;
+    margin-top: 12px;
+}
+
+button{
+    padding: 8px;
+    border: none;
+    background-color: white;
+    border-radius: 14px;
+    margin-top: 70px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.sedan button{
+    color: hsl(31, 77%, 52%);
+}
+.sedan button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    border: 2px solid white;cursor: pointer;
+}
+
+.suv button{
+    color: hsl(184, 100%, 22%) 
+}
+.suv button:hover{
+    background-color: hsl(184, 100%, 22%) ;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+.luxury button:hover{
+    color: white;
+    border: 2px solid white;
+    background-color: hsl(179, 100%, 13%);
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    main{
+        flex-direction: column;
+        margin: 30px 0px;
+        height: auto;
+    }
+    div{
+        width: 90vw;
+        height: auto;
+    }
+    .sedan{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .luxury{
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .sedan button:hover{
+        background-color: hsl(31, 77%, 52%);
+        color: white;
+        border: 2px solid white;
+        cursor: pointer;
+    }
+
+    .suv button:hover{
+        background-color: hsl(184, 100%, 22%) ;
+        color: white;
+        border: 2px solid white;
+        cursor: pointer;
+    }
+
+    .luxury button:hover{
+        color: white;
+        border: 2px solid white;
+        background-color: hsl(179, 100%, 13%);
+        cursor: pointer;
+    }
+
+}
