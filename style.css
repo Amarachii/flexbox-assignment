@@ -88,7 +88,7 @@ button{
     color: hsl(179, 100%, 13%);
 }
 .luxury button:hover{
-    color: white;
+    color: white; 
     border: 2px solid white;
     background-color: hsl(179, 100%, 13%);
     cursor: pointer;
@@ -132,4 +132,11 @@ button{
         cursor: pointer;
     }
 
+}
+
+@media (max-height:600px){
+    div{
+        width: 80vw;
+        height: auto;
+    }
 }
